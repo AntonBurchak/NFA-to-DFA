@@ -2,7 +2,8 @@
 const inpText = document.querySelector('.input__area input'),
 btnTest = document.querySelector('.input__btn'),
 testRes = document.querySelector('.result p'),
-testList = document.querySelector('.result ul li');
+testList = document.querySelector('.result ul li'),
+getTable = document.querySelector('.get-table button');
 
 
 btnTest.addEventListener('click', () => {
@@ -21,7 +22,11 @@ if (DFAValidate(inpText.value)) {
 } else {
   alert('Invalid entries data');
 }
+});
 
-
-})
+getTable.addEventListener('click', () => {
+   const area = document.createElement('textarea');
+   area.value = JSON.stringify(convertFunction(NFA_TABLE));
+   getTable.parentNode.appendChild(area);
+});
 
