@@ -25,8 +25,40 @@ if (DFAValidate(inpText.value)) {
 });
 
 getTable.addEventListener('click', () => {
-   const area = document.createElement('textarea');
-   area.value = JSON.stringify(convertFunction(NFA_TABLE));
-   getTable.parentNode.appendChild(area);
+  //  const area = document.createElement('textarea');
+  //  area.value = JSON.stringify(convertFunction(NFA_TABLE));
+  //  getTable.parentNode.appendChild(area);
+  //  var myCodeMirror = CodeMirror();
+  //  var myCodeMirror = CodeMirror(document.querySelector('#p'), {
+  //   value: JSON.stringify(convertFunction(NFA_TABLE)),
+  //   mode:  "javascript"
+  // });
+  // document.body.innerHTML += myCodeMirror;
+  console.log(convertFunction(NFA_TABLE));
+  const area = document.createElement('pre');
+  // area.textContent = JSON.stringify(convertFunction(NFA_TABLE));
+  
+  convertFunction(NFA_TABLE).forEach(element => {
+    const trns = () => {
+      let str = '';
+      for(let key in element.transitions) {
+        str += `${key}: ${element.transitions[key]}, `;
+      }
+      return str;
+    }
+
+    area.textContent += `
+    {
+      name: ${element.name},
+      transitions: {
+        ${trns()}
+      },
+      isAcceptState: ${element.isAcceptState}
+    }
+    `;
+  });
+  document.querySelector('.table-view').appendChild(area);
 });
+
+
 

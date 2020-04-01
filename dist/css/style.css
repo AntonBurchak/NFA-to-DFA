@@ -95,3 +95,11 @@ body {
     height: 150px;
     resize: none;
 }
+.table-view {
+    max-height: 200px;
+    width: 315px;
+    overflow-y: scroll;
+}
+pre {
+    text-align: left;
+}
