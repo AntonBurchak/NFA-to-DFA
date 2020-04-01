@@ -42,6 +42,7 @@ const NFA_TABLE = {
 * Мы можем получить таблицу DFA
 
 Результат перевода можно увидеть на следующей иллюстрации:
+
 ![Иллюстрация к проекту](https://github.com/AntonBurchak/NFA-to-DFA/blob/master/dist/img/NFADFA.jpg)
 
 
