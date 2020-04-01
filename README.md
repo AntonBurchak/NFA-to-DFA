@@ -1,5 +1,5 @@
 # NFA-to-DFA
-Implementing the convertion of an NFA table into a DFA table on JavaScript
+Implementing the convertion of an NFA table into a DFA table on JavaScript.
 Просмотреть готовое решение можно [здесь](https://github.com/AntonBurchak/Deterministic-finite-automata).
 
 Условие задачи: реализовать программу которая будет переводить таблицу NFA  в таблицу DFA для дальнейшего построения детерминированного конечного автомата.
