@@ -95,11 +95,20 @@ body {
     height: 150px;
     resize: none;
 }
-.table-view {
-    max-height: 200px;
+.table-view-dfa, .table-view-nfa {
+    max-height: 400px;
     width: 315px;
     overflow-y: scroll;
 }
+.table-view-dfa h3, .table-view-nfa h3{
+    text-align: left;
+}   
 pre {
     text-align: left;
+}
+.wrap {
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    padding: 40px 0;
 }

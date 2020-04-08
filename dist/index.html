@@ -12,16 +12,12 @@
     <div class="wrapper">
         <h1>NFA to DFA on JavaScript</h1>
 
-        <div class="input">
-            <div class="input__area">
-                <input type="text" placeholder="entry string">
-            </div>
-            <button class="input__btn">Check</button>
-        </div>
-        <h3>or</h3>
         <div class="get-table">
-            <button>Get NFA table</button>
-            <div class="table-view"></div>
+            <button>Get DFA table</button>
+            <div class="wrap">
+                <div class="table-view-nfa"><h3>NFA:</h3> <br></div>
+                <div class="table-view-dfa"><h3>DFA:</h3> <br></div>
+            </div>
         </div>
         <div class="result">
             
@@ -35,12 +31,10 @@
     <div class="powered">
         Developed by <a href="https://www.linkedin.com/in/antonburchak/" target="_blank">Anton Burchak</a>, check my <a href="https://github.com/AntonBurchak/Deterministic-finite-automata" target="_blank">github</a>.
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+    
     <script src="../nfa.config.js"></script>
     <script src="../NFA.js"></script>
     <script src="../index.js"></script>
-    <script src="../dfa.config.js"></script>
-    <script src="../DFA.js"></script>
 </body>
 
 </html>
